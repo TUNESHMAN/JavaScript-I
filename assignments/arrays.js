@@ -143,4 +143,4 @@ let BMWAndAudi = inventory.filter(function(vehicle){
  }
 
 });
-console.log(BMWAndAudi);
+console.log (JSON.stringify((BMWAndAudi)));
