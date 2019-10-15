@@ -103,7 +103,7 @@ console.log(lastCar);
 // let carModels = [];
 let carModelsSorted = [];
 console.log();
-let carModels = inventory.map(function(model) {
+let carModels = inventory.map((model) => {
   return model.car_model;
 });
 
@@ -114,7 +114,7 @@ console.log(carModels.sort());
 // let carYears = [];
 console.log();
 
-let carYears = inventory.map(function(year) {
+let carYears = inventory.map((year) => {
   return year.car_year;
 });
 
@@ -125,7 +125,7 @@ console.log(carYears);
 // let oldCars = [];
 console.log();
 
-let oldCars = carYears.filter(function(old) {
+let oldCars = carYears.filter((old) => {
   if (old > 2000) {
     return true;
   }
@@ -135,7 +135,7 @@ console.log(oldCars.length);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi = inventory.filter(function(vehicle) {
+let BMWAndAudi = inventory.filter((vehicle) => {
   if (vehicle.car_make === "BMW" || vehicle.car_make === "Audi") {
     return true;
   }
